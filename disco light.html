@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: grey;
+    }
+    #container{
+        height:400px;
+        width:800px;
+        border: 3px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 70px;
+        left: 200px;
+        background-color: rgb(255, 104, 00); 
+        border-radius: 10px;
+    }
+    #Box1{
+        height:200px;
+        width:200px; 
+        background-color: white ;
+        animation: Animate 1.5s ease-in infinite; 
+        border-radius: 10px;
+        margin: 20px;  
+        transform: rotate(45deg);
+        
+    }
+    #Box2{
+        height:200px;
+        width:200px; 
+        background-color: white ;
+        animation: Animate 1s ease-in infinite; 
+        border-radius: 10px ;
+        transform: rotate(45deg);
+    }
+    #Box3{
+        height:200px;
+        width:200px; 
+        background-color: white ;
+        animation: Animate 2s ease-in infinite; 
+        border-radius: 10px ;
+        transform: rotate(45deg);
+    }
+    /*@keyframes Animate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }*/
+    @keyframes Animate{
+        10%{
+            background-color: red;
+        }
+        30%{
+            background-color: yellow;
+        }
+        60%{
+            background-color: blue;
+        }
+        100%{
+            background-color: green;
+        }
+    } 
+
+    H1{
+        text-align: center;
+        color: red;
+        border: 5px solid green;
+    }
+</style>
+<body>
+    <h1>DISCO LIGHT</h1>
+    <div id="container">
+        <div id="Box1"></div>
+        <div id="Box2"></div>
+        <div id="Box3"></div>
+    </div>
+    
+</body>
+</html>
