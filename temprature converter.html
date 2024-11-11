@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+</head>
+<style>
+    .M{
+        height: 200px;
+        width: 800px;
+        background-color: aqua;
+        text-align: center;
+        margin-left: 200px;
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-evenly;
+       
+        background-color: aqua;
+    
+
+    }
+    h1{
+        text-align: center;
+        margin-top: 90px;
+        text-transform: uppercase;
+        background-color: darkcyan;
+    }
+    #con{
+        display: inline-block;
+       margin-top: 50px;
+        font-size: 30px;
+        
+    }
+    .in{
+     margin-left: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Temprature Converter</h1>
+   <div class="M">
+  <div id="con">
+    <label for="">Celsius</label><br>
+    <input type="number" value="0" class="in" id="C"></input>
+    </div>
+    <div id="con">
+    <label for="">Forenheight</label><br>
+    <input type="number" value="0" class="in" id="F">
+</div>
+</div>
+<script>
+    let C= document.getElementById("C");
+    let F= document.getElementById("F");
+
+    function cel(){
+    let c = this.value;
+    let f = (c*9/5)+32;
+    F.value = f;
+    }
+
+    function far(){
+    let f = this.value;
+    let c = (f-32)*5/9
+    C.value = c;
+    }
+
+    C.addEventListener('input',cel);
+    F.addEventListener('input',far);
+</script>
+</body>
+</html>
