@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<style>
+    body{
+      
+      background-image: radial-gradient(orange,aqua,purple);
+    }
+       
+    #A{
+        color: white;
+        background-color: blue;
+        margin-left: 220px;
+        border: 3px solid  black;
+        border-top: 3px solid  red;
+        border-radius: 15px;
+    }
+    fieldset{
+        height: 550px;
+        width:800px;
+        margin-left: 190px;
+        /* background-image: radial-gradient(orange,aqua,purple); */
+        
+        border: 3px solid  blue;
+        border-top: 20px solid  blue;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px;
+        animation: ani 3s infinite normal;
+    }
+    input{
+        margin-left: 100px;
+        font-size: 20px;
+    }
+    button{
+        color: white;
+        background-color: blue;
+        margin-left: 350px;
+        font-size: 25px;
+        border-radius: 8px;  
+    }
+    button:hover{
+        background-color: red;
+    }
+    select{
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    @keyframes ani{
+        10%{
+            background-color: red;
+        }
+        30%{
+            background-color: green;
+        }
+        70%{
+            background-color: yellow;
+        }
+        100%{
+            background-color: aqua;
+        }
+    }
+</style>
+<body>
+    <form action="/action_page.php">
+    <br>
+<br>
+    <fieldset>
+        <h1><span id="A"> REGISTRATION FORM</h1></span>
+        <br>
+        
+            <form>
+<input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
+
+<br>
+<br>
+
+<input type="date" width="200 px" placeholder="DOB">
+<br>
+<br>
+
+<input type="radio" name="gender"> Male 
+<input type="radio" name="gender"> female
+<br>
+<br> 
+<input type="text" placeholder="User Id">
+<br>
+<br>
+<input type="password" placeholder="Password">
+<br>
+<br>
+<input type="password" placeholder="Confirm Password">
+<br>
+<br>
+<input type="text" size="5" placeholder="pin">
+<br>
+<br>
+<select>
+    <option>Select A State</option>
+      <option>Utter pradesh</option>
+        <option>lukhnau</option>
+         <option>Delhi</option>
+          <option>Mumbai</option>
+         <option>Varanasi</option>
+        <option>Bihar</option>
+       <option>Patana</option>
+      <option>Rajatalab</option>
+    
+
+</select>
+<br>
+<br>
+<input type="checkbox" <p>I accept the term and condition</p>
+<br>
+
+<button id="G">SUBMIT </button>
+<br>
+<br>
+</form>
+
+    </fieldset>
+</form>
+</body>
+<script>
+    let adi = document.getElementById("G")
+    adi.addEventListener('click',function() {
+alert('You Are Registerd')
+    
+
+    });
+</script>
+</html>
