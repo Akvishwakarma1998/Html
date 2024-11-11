@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Calculator</title>
+<link rel="icon" href="https://th.bing.com/th/id/OIP.5p8jecbJN6_wvt4v6z7TxQHaHu?w=197&h=206&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+</head>
+<style>
+body{
+background-color:grey;
+}
+#menu{
+height:450px;
+width:303px;
+background-color:green;
+margin-left:37%;
+margin-top:5%;
+font-size:30px;
+border-radius:15px;
+}
+input{
+font-size:26px;
+color:black;
+background-color:grey;
+width:70px;
+height:75px;
+border-radius:20%;
+}
+#Dis{
+width:300px;
+text-align:right;
+font-size:45px;
+background-color:white;
+text-color:black;
+}
+.Equal{
+color:green;
+width:148px;
+background-color:orange;
+}
+.Op{
+color:green;
+background-color:orange;
+}
+#Y{
+color:white;
+border:3px solid red;
+border-radius:20px;
+font-size:50px;
+margin-left:36%;
+background-color:purple;
+}
+</style>
+<body>
+
+<span id ="Y">
+<span> CALCULATOR</span>
+</span>
+</span>
+<div id="Menu">
+<form>
+<div >
+<input type="text" name="display" id="Dis">
+</div>
+<div>
+<input type="button" value="AC" onclick="display.value = '' " class="Op">
+<input type="button" value="DE" onclick="display.value = '' " class="Op">
+<input type="button" value="." onclick="display.value = '.' " class="Op">
+<input type="button" value="/" onclick="display.value += '/' " class="Op">
+</div>
+<div>
+<input type="button" value="7" onclick="display.value += '7' ">
+<input type="button" value="8" onclick="display.value += '8' ">
+<input type="button" value="9" onclick="display.value += '9' ">
+<input type="button" value="*" onclick="display.value += '*' " class="Op" >
+</div>
+<div>
+<input type="button" value="4" onclick="display.value += '4' ">
+<input type="button" value="5" onclick="display.value += '5' ">
+<input type="button" value="6" onclick="display.value += '6' ">
+<input type="button" value="-" onclick="display.value += '-' " class="Op">
+</div>
+<div>
+<input type="button" value="1" onclick="display.value += '1' ">
+<input type="button" value="2" onclick="display.value += '2' ">
+<input type="button" value="3" onclick="display.value += '3' ">
+<input type="button" value="+" onclick="display.value += '+' " class="Op">
+</div>
+<div>
+<input type="button" value="00" onclick="display.value += '00' ">
+<input type="button" value="0" onclick="display.value += '0' ">
+<input type="button" value="=" onclick="display.value = eval(display.value)" class="Equal">
+</div>
+</form>
+</div> 
+</div> 
+</body>
+</html>
